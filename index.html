@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Direction</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            list-style: none;
+            list-style-type: none;
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        .flex-container-navbar {
+            background-color: gray;
+            height: 75px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+        }
+
+        .flex-item-navbar {
+            margin: 1.5%;
+            font-size: 21px;
+            color: aliceblue;
+        }
+
+        .flex-item-navbar a:hover {
+            color: antiquewhite;
+        }
+
+        #imagem-navbar {
+            max-width: 700px;
+            max-height: 700px;
+            width: 100%;
+            float: right;
+        }
+
+        header {
+            margin-top: 1%;
+            color: gray;
+        }
+
+        .flex-container-main {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 1%;
+            padding: 1%;
+        }
+
+        .flex-container-section {
+            border: solid 1px gray;
+            margin: 1%;
+            padding: 1%;
+            color: gray;
+        }
+
+        .flex-container-footer {
+            background-color: gray;
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+        }
+
+        .flex-item-footer {
+            margin: 1.5%;
+            font-size: 17px;
+            color: aliceblue;
+        }
+
+        .flex-item-footer a:hover {
+            color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="flex-container-navbar">
+            <li class="flex-item-navbar"><a href="#">Filipe Fonseca da Silva</a></li>
+            <li class="flex-item-navbar"><a href="#">Trabalho</a></li>
+            <li class="flex-item-navbar"><a href="#">Pessoal</a></li>
+            <li class="flex-item-navbar"><a href="#">Outros</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <img id="imagem-navbar" src="./peguin-linux.jpg" alt="imagem de um pinguim.">
+        <h3>This Month</h3>
+        <h1>WEEKLY PLAN 1 2 3 4 5 6 7 8 9 10 11 12</h1>
+    </header>
+
+    <main class="flex-container-main">
+        <section class="flex-container-section">
+            <h1>/ Monday</h1>
+            <form>
+                <label>@notas</label><br>
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+            </form>
+        </section>
+
+        <section class="flex-container-section">
+            <h1>/ Tuesday</h1>
+            <form>
+                <label>@notas</label><br>
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+            </form>
+        </section>
+
+        <section class="flex-container-section">
+            <h1>/ Wednesday</h1>
+            <form>
+                <label>@notas</label><br>
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+            </form>
+        </section>
+
+        <section class="flex-container-section">
+            <h1>/ Thursday</h1>
+            <form>
+                <label>@notas</label><br>
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+            </form>
+        </section>
+
+        <section class="flex-container-section">
+            <h1>/ Friday</h1>
+            <form>
+                <label>@notas</label><br>
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+            </form>
+        </section>
+
+        <section class="flex-container-section">
+            <h1>/ Saturday</h1>
+            <form>
+                <label>@notas</label><br>
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+            </form>
+        </section>
+
+        <section class="flex-container-section">
+            <h1>/ Sunday</h1>
+            <form>
+                <label>@notas</label><br>
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+                <input type="checkbox" />
+                <p>----------------------------------------</p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <ul class="flex-container-footer">
+            <li class="flex-item-footer"><a href="#">Site created by: Filipe Fonseca da Silva</a></li>
+            <li class="flex-item-footer"><a href="#">Photo by: Nome do autor</a></li>
+            <li class="flex-item-footer"><a href="#">On: Unplash</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
