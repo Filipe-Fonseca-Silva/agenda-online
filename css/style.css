@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    list-style: none;
+    list-style-type: none;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.flex-container-navbar {
+    background-color: gray;
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.flex-item-navbar {
+    margin: 1.5%;
+    font-size: 21px;
+    color: aliceblue;
+}
+
+.flex-item-navbar a:hover {
+    color: antiquewhite;
+}
+
+#imagem-navbar {
+    max-width: 700px;
+    max-height: 700px;
+    width: 100%;
+    float: right;
+}
+
+header {
+    margin-top: 1%;
+    color: gray;
+}
+
+.flex-container-main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1%;
+    padding: 1%;
+}
+
+.flex-container-section {
+    border: solid 1px gray;
+    margin: 1%;
+    padding: 1%;
+    width: 50%;
+    height: 350px;
+    color: gray;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.flex-container-footer {
+    background-color: gray;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.flex-item-footer {
+    margin: 1.5%;
+    font-size: 17px;
+    color: aliceblue;
+}
+
+.flex-item-footer a:hover {
+    color: antiquewhite;
+}
+
+@media only screen and (max-width: 460px) {
+    .flex-container-navbar {
+        height: 130px;
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .flex-container-footer {
+        height: 100px;
+        flex-direction: column;
+        text-align: center;
+    }
+}
