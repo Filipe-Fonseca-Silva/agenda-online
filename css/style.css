@@ -82,6 +82,22 @@ tr:nth-child(even) {
     border-left: 2px solid magenta;
 }
 
+.botao-salvar {
+    background-color: magenta;
+    padding: 15% 25% 15% 25%;
+    border: solid 1px magenta;
+    border-radius: 10%;
+    color: gray;
+}
+
+.botao-salvar:hover {
+    background-color: rgb(221, 29, 221);
+    padding: 15% 25% 15% 25%;
+    border: solid 1px rgb(221, 29, 221);
+    border-radius: 10%;
+    color: white;
+}
+
 .flex-container-footer {
     background-color: gray;
     height: 50px;
